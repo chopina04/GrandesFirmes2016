@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Evolution de la répartition par pays des firmes du classement Global Fortune 500 (2000-2016) ">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Evolution de la répartition par pays des firmes du classement Fortune Global 500 (2000-2016) ">
       <customproperties/>
       <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="MONDE_FTN_PAYS_GF_2001_201720171115190542501" source="E:/Lieux d ela mondialisation/MONDE_FTN_PAYS_GF_2001-2017.shp" name="Nombre de firmes par pays en 2000 ">
         <customproperties/>
@@ -14,9 +14,9 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Métropoles mondiales et grandes firmes en 2016">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Métropoles mondiales et grandes firmes en 2016">
       <customproperties/>
-      <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="MONDE_ALPHA_CITIES_GaWC_2012_1620171115183910010" source="E:/Lieux d ela mondialisation/MONDE_ALPHA_CITIES_GaWC_2012-16.shp|layerid=0|subset=&quot;GaWC2016&quot; != '5. BETA -'" name="Nombre de firmes classées dans le Global Fortune par ville de la catégorie Alpha selon le GaWC en 2016">
+      <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="MONDE_ALPHA_CITIES_GaWC_2012_1620171115183910010" source="E:/Lieux d ela mondialisation/MONDE_ALPHA_CITIES_GaWC_2012-16.shp|layerid=0|subset=&quot;GaWC2016&quot; != '5. BETA -'" name="Nombre de firmes classées dans le Fortune Global 500 par ville de la catégorie Alpha selon le GaWC en 2016">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -65,7 +65,7 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="false">
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Evolution de la répartition par pays des firmes du classement Global Fortune 500 (2000-2016) ">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Evolution de la répartition par pays des firmes du classement Fortune Global 500 (2000-2016) ">
       <legendlayer drawingOrder="1" open="false" checked="Qt::Unchecked" name="Nombre de firmes par pays en 2000 " showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="MONDE_FTN_PAYS_GF_2001_201720171115190542501" visible="0"/>
@@ -77,8 +77,8 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Métropoles mondiales et grandes firmes en 2016">
-      <legendlayer drawingOrder="2" open="false" checked="Qt::Unchecked" name="Nombre de firmes classées dans le Global Fortune par ville de la catégorie Alpha selon le GaWC en 2016" showFeatureCount="0">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Métropoles mondiales et grandes firmes en 2016">
+      <legendlayer drawingOrder="2" open="false" checked="Qt::Unchecked" name="Nombre de firmes classées dans le Fortune Global 500 par ville de la catégorie Alpha selon le GaWC en 2016" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="MONDE_ALPHA_CITIES_GaWC_2012_1620171115183910010" visible="0"/>
         </filegroup>
@@ -339,6 +339,7 @@
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -364,7 +365,7 @@
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="CNTR_ID" index="0" name=""/>
         <alias field="SHAPE_AREA" index="1" name=""/>
@@ -379,7 +380,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="544876800">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="CNTR_ID"/>
           <column width="-1" hidden="0" type="field" name="SHAPE_AREA"/>
@@ -393,10 +394,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -439,7 +440,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Nombre de firmes classées dans le Global Fortune par ville de la catégorie Alpha selon le GaWC en 2016</layername>
+      <layername>Nombre de firmes classées dans le Fortune Global 500 par ville de la catégorie Alpha selon le GaWC en 2016</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
